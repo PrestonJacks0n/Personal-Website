@@ -2,30 +2,6 @@
 
 Personal portfolio built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. Deployed on Vercel.
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Editing Content
-
-**All personal content lives in one file:** [`src/data/content.ts`](src/data/content.ts)
-
-| Export | What it controls |
-|---|---|
-| `personal` | Name, tagline, bio, links, location |
-| `education` | Degrees, courses |
-| `experience` | Work history with bullet points |
-| `projects` | Project cards (title, description, tags, links) |
-| `skills` | Skill categories and items |
-| `leadership` | Clubs, volunteering |
-
-You never need to touch component code to update your info — just edit that file and save.
-
 ## Pages
 
 | Route | Page |
