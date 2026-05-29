@@ -17,14 +17,6 @@ Personal portfolio built with **Next.js 14**, **Tailwind CSS**, and **Framer Mot
 
 Defaults to the user's OS preference. Toggled via the button in the top-right corner of the nav. Powered by `next-themes`.
 
-## Deployment (Vercel)
-
-1. Push to GitHub.
-2. Go to [vercel.com](https://vercel.com), import the repo.
-3. Vercel auto-detects Next.js — click **Deploy**. Done.
-
-The `vercel.json` at the root pre-configures the build settings.
-
 ## Stack
 
 - [Next.js 14](https://nextjs.org) (App Router)
