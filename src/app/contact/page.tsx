@@ -16,7 +16,7 @@ export default function ContactPage() {
         </FadeIn>
         <FadeIn delay={0.05}>
           <p className="mb-14 max-w-xl text-[rgb(var(--muted))]">
-            Whether you want to talk ML, explore a collaboration, or just say hi — my inbox is open.
+            Whether you want to talk something nerdy, explore a collaboration, or just say hi — my inbox is open.
           </p>
         </FadeIn>
 
