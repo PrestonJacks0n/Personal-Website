@@ -135,6 +135,71 @@ export const skills = {
   ],
 };
 
+export const lab = [
+  {
+    slug: "padres-tv",
+    title: "Padres TV Automation",
+    status: "Live",
+    summary:
+      "End-to-end home automation that turns on the TV, navigates to the live Padres game, and powers off after the final out — fully scheduled around the MLB season.",
+    tags: ["Python", "SmartThings API", "MLB Stats API", "WebSocket", "Windows Task Scheduler"],
+    hasDiagram: true,
+    sections: [
+      {
+        heading: "What it does",
+        body: "Built to get the most out of a Padres.TV subscription and make sure no game is ever missed. The system handles everything from pre-game power-on to post-game shutdown — no remotes, no manual setup.",
+      },
+      {
+        heading: "Scheduling",
+        body: "schedule_games.py pulls the full Padres season schedule from the MLB Stats API and generates a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. Re-run it monthly to pick up any schedule changes.",
+      },
+      {
+        heading: "Game start",
+        body: "padres_tv.py fires via wsl.exe. First checks SmartThings to see if the TV is already on — if so, does nothing. If off, sends a power-on command via SmartThings, waits 10 seconds for boot, then connects via WebSocket (port 8002, saved auth token) and runs a key sequence: Home → right 5× to MLB app → open → select Padres game → fast-forward to live.",
+      },
+      {
+        heading: "Game end",
+        body: "After 3 hours it starts polling the MLB Stats API every 10 minutes for abstractGameState: Final. Once the game ends, it waits a 60-minute buffer (in case you're paused behind live), then sends a SmartThings power-off — skipping it if the TV is already off.",
+      },
+      {
+        heading: "Fallback",
+        body: "If you're away from home and the local WebSocket fails, SmartThings handles power on/off through Samsung's cloud — so the schedule still gets honored remotely.",
+      },
+      {
+        heading: "Files",
+        body: "padres_tv.py (core logic) · schedule_games.py (season scheduler) · padres_tv_config.json (all settings: nav key sequence, MAC address, SmartThings device ID) · schedule_setup.bat (Windows setup runner).",
+      },
+    ],
+  },
+  {
+    slug: "printer-automation",
+    title: "Printer Automation",
+    status: "Live",
+    summary:
+      "Monthly automation that monitors HP Smart print usage, upgrades the plan tier only when needed, then immediately resets — so the family only pays more in months they actually print a lot.",
+    tags: ["Python", "Automation", "HP Smart API", "Web Scraping"],
+    hasDiagram: false,
+    sections: [
+      {
+        heading: "What it does",
+        body: "Logs into the HP Smart portal, checks current print usage for the billing cycle, and calculates pages printed relative to the base 10-page plan plus any rollover. Based on that, it decides whether a plan upgrade is needed for the current month.",
+      },
+      {
+        heading: "Smart upgrade logic",
+        body: "If an upgrade is warranted, it bumps the plan to the appropriate tier (25, 50, 100, 300, 500, 700, or 1000 pages), then immediately resets back to the 10-page base plan for next month — so the bump is surgical and one-time.",
+      },
+      {
+        heading: "Reporting",
+        body: "After each run it reports what it found, the page calculation, and what action was taken. With notifyOnCompletion enabled, a notification fires when the monthly check completes.",
+      },
+      {
+        heading: "Real-world impact",
+        body: "This automation is actively saving my family money — we only pay for higher tiers in months we actually need them, instead of staying on an oversized plan year-round.",
+      },
+    ],
+  },
+];
+
 export const leadership = [
   {
     role: "Vice President — Indoor Men's Volleyball Club Team",
