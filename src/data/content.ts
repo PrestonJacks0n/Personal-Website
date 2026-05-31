@@ -25,7 +25,7 @@ export const education = [
   {
     school: "University of Michigan — Ann Arbor",
     degree: "Bachelor of Science in Engineering, Computer Science",
-    note: "GPA: 3.5 · Class of 2026 · Business Minor",
+    note: "GPA: 3.5 · Class of 2026 · All courses completed for Business Minor",
     url: "https://umich.edu/",
     courses: [
       "Intro to ML",

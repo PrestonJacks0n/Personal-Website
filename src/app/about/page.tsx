@@ -55,28 +55,19 @@ export default function AboutPage() {
             <FadeIn delay={0.2}>
               <div className="card">
                 <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))]">
-                  Education
-                </p>
-                <p className="font-medium">U of M BSE Computer Science</p>
-                <p className="text-sm text-[rgb(var(--muted))]">Class of 2026 · GPA 3.5</p>
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.25}>
-              <div className="card">
-                <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))]">
                   Next
                 </p>
                 <p className="font-medium">UCLA Anderson MSBA</p>
                 <p className="text-sm text-[rgb(var(--muted))]">Starting Fall 2026</p>
               </div>
             </FadeIn>
-            <FadeIn delay={0.3}>
+            <FadeIn delay={0.25}>
               <div className="card">
                 <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))]">
                   Interests
                 </p>
                 <p className="text-sm text-[rgb(var(--muted))]">
-                  Machine learning · Systems programming · Data analytics · Volleyball
+                  AI · Data analytics · Vibe coding · Volleyball
                 </p>
               </div>
             </FadeIn>
