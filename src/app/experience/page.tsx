@@ -1,6 +1,5 @@
 import { FadeIn } from "@/components/FadeIn";
 import { experience } from "@/data/content";
-import { Briefcase } from "lucide-react";
 
 export const metadata = { title: "Experience — Preston Jackson" };
 
@@ -54,21 +53,6 @@ export default function ExperiencePage() {
           </div>
         </div>
 
-        {/* CTA */}
-        <FadeIn delay={0.3}>
-          <div className="mt-16 rounded-2xl border border-dashed border-[rgb(var(--border))] p-8 text-center">
-            <Briefcase className="mx-auto mb-3 text-indigo-400" size={28} />
-            <p className="mb-4 text-[rgb(var(--muted))]">
-              Looking for opportunities in data science, ML engineering, and product analytics.
-            </p>
-            <a
-              href="mailto:prestoj@umich.edu"
-              className="inline-flex items-center gap-2 rounded-xl bg-indigo-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-all hover:bg-indigo-400 hover:-translate-y-0.5"
-            >
-              Let&apos;s Talk
-            </a>
-          </div>
-        </FadeIn>
       </div>
     </div>
   );

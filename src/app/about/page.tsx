@@ -55,7 +55,7 @@ export default function AboutPage() {
             <FadeIn delay={0.2}>
               <div className="card">
                 <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[rgb(var(--muted))]">
-                  Currently
+                  Education
                 </p>
                 <p className="font-medium">U of M BSE Computer Science</p>
                 <p className="text-sm text-[rgb(var(--muted))]">Class of 2026 · GPA 3.5</p>
