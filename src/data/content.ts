@@ -151,7 +151,7 @@ export const lab = [
       },
       {
         heading: "Scheduling",
-        body: "schedule_games.py pulls the full Padres season schedule from the MLB Stats API and generates a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. Re-run it monthly to pick up any schedule changes.",
+        body: "schedule_games.py pulled the full Padres season schedule from the MLB Stats API and generated a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. Re-run it monthly to pick up any schedule changes.",
       },
       {
         heading: "Game start",
@@ -159,15 +159,11 @@ export const lab = [
       },
       {
         heading: "Game end",
-        body: "After 3 hours it starts polling the MLB Stats API every 10 minutes for abstractGameState: Final. Once the game ends, it waits a 60-minute buffer (in case you're paused behind live), then sends a SmartThings power-off — skipping it if the TV is already off.",
+        body: "After 3 hours it starts polling the MLB Stats API every 10 minutes for abstractGameState: Final. Once the game ends, it waits a 60-minute buffer (in case I'm behind live), then sends a SmartThings power-off — skipping it if the TV is already off.",
       },
       {
         heading: "Fallback",
-        body: "If you're away from home and the local WebSocket fails, SmartThings handles power on/off through Samsung's cloud — so the schedule still gets honored remotely.",
-      },
-      {
-        heading: "Files",
-        body: "padres_tv.py (core logic) · schedule_games.py (season scheduler) · padres_tv_config.json (all settings: nav key sequence, MAC address, SmartThings device ID) · schedule_setup.bat (Windows setup runner).",
+        body: "If I'm away from home and the local WebSocket fails, SmartThings handles power on/off through Samsung's cloud — so the schedule still gets honored remotely.",
       },
     ],
   },
