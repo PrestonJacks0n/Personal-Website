@@ -151,11 +151,11 @@ export const lab = [
       },
       {
         heading: "Scheduling",
-        body: "schedule_games.py pulled the full Padres season schedule from the MLB Stats API and generated a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. Re-run it monthly to pick up any schedule changes.",
+        body: "The schedule_games.py pulled the full Padres season schedule from the MLB Stats API and generated a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. Re-run it monthly to pick up any schedule changes.",
       },
       {
         heading: "Game start",
-        body: "padres_tv.py fires via wsl.exe. First checks SmartThings to see if the TV is already on — if so, does nothing. If off, sends a power-on command via SmartThings, waits 10 seconds for boot, then connects via WebSocket (port 8002, saved auth token) and runs a key sequence: Home → right 5× to MLB app → open → select Padres game → fast-forward to live.",
+        body: "The padres_tv.py fires via wsl.exe. First checks SmartThings to see if the TV is already on — if so, does nothing. If off, sends a power-on command via SmartThings, waits 10 seconds for boot, then connects via WebSocket (port 8002, saved auth token) and runs a key sequence: Home → right 5× to MLB app → open → select Padres game → fast-forward to live.",
       },
       {
         heading: "Game end",
