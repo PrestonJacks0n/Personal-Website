@@ -4,13 +4,13 @@
 
 export const personal = {
   name: "Preston Jackson",
-  tagline: "CS Engineer · Data Scientist · ML Enthusiast",
+  tagline: "CS Engineer · Data Scientist · AI Enthusiast",
   location: "San Diego, CA",
   email: "prestoj@umich.edu",
   phone: "(858) 382-5994",
   github: "https://github.com/PrestonJacks0n",
   linkedin: "https://linkedin.com/in/prestoj24",
-  bio: `I'm a Computer Science & Engineering student at the University of Michigan (GPA 3.5, Class of 2026) with a Business minor, heading to UCLA Anderson for a Master's in Business Analytics in Fall 2026. I love building things at the intersection of machine learning, systems programming, and product — from training Vision Transformers to engineering low-latency C++ exchange simulators.`,
+  bio: `I am a recent graduate from the University of Michigan with a Bachelor of Science in Engineering in Computer Science (Class of 2026, GPA 3.5). I also completed all courses for the Ross Business Minor at Michigan. Next Fall, I am heading to UCLA Anderson for a Master's in Business Analytics. I love building things and operate at the intersection of business and technology. Feel free to check out my website to learn all about me. Lastly, please reach out if you have any questions about me or want to get in touch so we can build the next big thing together!`,
   bioShort:
     "CS Engineering student at U of M · Future UCLA Anderson MSBA · Building at the intersection of ML, systems, and product.",
 };

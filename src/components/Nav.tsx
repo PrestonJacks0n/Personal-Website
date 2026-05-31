@@ -44,11 +44,7 @@ export function Nav() {
           href="/"
           className="font-semibold tracking-tight hover:opacity-80 transition-opacity"
         >
-          <span className="gradient-text">{personal.name.split(" ")[0]}</span>
-          <span className="text-[rgb(var(--muted))]">
-            {" "}
-            {personal.name.split(" ")[1]}
-          </span>
+          <span className="gradient-text">PJ</span>
         </Link>
 
         {/* Desktop nav */}

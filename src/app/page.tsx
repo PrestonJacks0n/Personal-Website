@@ -43,7 +43,7 @@ export default function HomePage() {
             className="mb-6 text-5xl font-bold leading-tight tracking-tight md:text-7xl"
           >
             Hey, I&apos;m{" "}
-            <span className="gradient-text">{personal.name.split(" ")[0]}</span>
+            <span className="gradient-text">{personal.name}</span>
           </motion.h1>
 
           <motion.p
