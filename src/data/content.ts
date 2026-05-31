@@ -151,7 +151,7 @@ export const lab = [
       },
       {
         heading: "Scheduling",
-        body: "The schedule_games.py pulled the full Padres season schedule from the MLB Stats API and generated a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. I rerun it monthly to pick up any schedule changes.",
+        body: "The schedule_games.py pulled the full Padres season schedule from the MLB Stats API and generated a Windows Task Scheduler entry for every remaining game, each firing 10 minutes before first pitch. It reruns monthly to pick up any schedule changes.",
       },
       {
         heading: "Game start",
