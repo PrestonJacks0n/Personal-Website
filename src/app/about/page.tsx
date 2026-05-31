@@ -25,7 +25,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="leading-relaxed text-[rgb(var(--muted))]">
-                Outside of engineering, I&apos;m passionate about volleyball — I serve as Vice President of the U of M Men&apos;s Indoor Club Volleyball Team, managing a $45k budget and fundraising for travel. I&apos;ve also volunteered abroad, spending two weeks as a pharmacist and P.E. coach in Fiji on a medical mission trip.
+                Outside of engineering, I&apos;m passionate about volleyball — I recently finished serving as Vice President of the U of M Men&apos;s Indoor Club Volleyball Team, managing a $45k budget and fundraising for travel. I&apos;ve also volunteered abroad, spending two weeks as a pharmacist and P.E. coach in Fiji on a medical mission trip.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>

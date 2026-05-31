@@ -16,7 +16,8 @@ export default function ProjectsPage() {
         </FadeIn>
         <FadeIn delay={0.05}>
           <p className="mb-14 max-w-xl text-[rgb(var(--muted))]">
-            A selection of things I&apos;ve built — from ML research to systems programming to hackathon wins.
+            A selection of things I&apos;ve built — from ML research to systems programming to hackathon wins. Want to see what I&apos;m building right now with Claude?{" "}
+            <Link href="/lab" className="link">Check out my Lab →</Link>
           </p>
         </FadeIn>
 
