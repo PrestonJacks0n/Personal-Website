@@ -172,10 +172,14 @@ export const lab = [
     title: "Printer Automation",
     status: "Live",
     summary:
-      "Monthly automation that monitors HP Smart print usage, upgrades the plan tier only when needed, then immediately resets — so the family only pays more in months they actually print a lot.",
+      "Monthly automation that monitors HP Smart print usage and upgrades the plan tier only when needed.",
     tags: ["Python", "Automation", "HP Smart API", "Web Scraping"],
     hasDiagram: false,
     sections: [
+      {
+        heading: "The issue",
+        body: "HP Smart offers a paper subscription where you set how many pages you expect to print each month. Set it too high and you're paying for pages you never use. Set it low and you can upgrade mid-month, but each additional tier costs more — so the goal is to land on exactly the right tier after you know how much you've actually printed. I built this to handle that calculation automatically and make sure we're always on the optimal plan.",
+      },
       {
         heading: "What it does",
         body: "Logs into the HP Smart portal, checks current print usage for the billing cycle, and calculates pages printed relative to the base 10-page plan plus any rollover. Based on that, it decides whether a plan upgrade is needed for the current month.",
